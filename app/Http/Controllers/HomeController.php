@@ -9,6 +9,7 @@ class HomeController extends Controller
     function index()
     {
         $pageTitle = 'Home';
-        return view('home', ['pageTitle' => $pageTitle]);
+        $icon = 'bi bi-house-fill';
+        return view('home', ['pageTitle' => $pageTitle, 'icon' => $icon]);
     }
 }
